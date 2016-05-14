@@ -2,12 +2,14 @@
 A full caffe experiment using MNIST dataset. It includes organizing the data into ImageList, lmdb, and hdf5 format. Training the lenet network with data and finally test the network with a single image.
 
 Prerequisites:
+
 	1) Install caffe, with python layers, and pycaffe.
 	2) Anaconda for python.
 
-Steps for Running:
+
 
 Data Preparation:
+
 	1) Download the code ( There should be a folder named 'CaffeToyExampleMnist' )
 	2) Open terminal and then 'cd' to the the directory 'data'
 	3) From the directory data run the script get_mnist.sh
@@ -32,7 +34,7 @@ Data Preparation:
 	6) Run the python script 'hdf5fromImgList.py', this will create hdf5 database from the Images, which is another way of to feed data to
 	   caffe.
 
-Train and Validataion:
+Train and Validataion: 
 
 	1) With a text editor modify all the files inside 'CaffeToyExampleMnist/scripts', ie change the CAFFE_ROOT to your own caffe root.
 	2) In terminal move back to the directory 'CaffeToyExampleMnist', using 'cd ..'
@@ -44,6 +46,7 @@ Train and Validataion:
 	training and validation. It uses the hdf5 database which was generated in the data generation step.
 
 Test:
+
 	1) Modify the python script testSample.py  and run it to see the result of a specific image. The variables to change are
 	caffe_root , model_def, model_weights,sampleImgPath 
 
