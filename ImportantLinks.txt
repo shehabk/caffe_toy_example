@@ -1,0 +1,22 @@
+*) CNN overview:
+	a) http://cs231n.github.io/convolutional-networks/
+
+*) Protocol Buffers
+	a) https://developers.google.com/protocol-buffers/docs/proto#simple 
+
+*) Installation (Linux):
+	a) http://caffe.berkeleyvision.org/install_apt.html
+	b) http://caffe.berkeleyvision.org/installation.html#compilation (compilation)
+	c) http://caffe.berkeleyvision.org/tutorial/interfaces.html (python and matlab interface install)
+
+*) Some tutorials Links:
+	a) http://caffe.berkeleyvision.org/tutorial/
+	b) http://courses.cs.tau.ac.il/Caffe_workshop/Bootcamp/ ( A boot camp )
+	c) http://vision.stanford.edu/teaching/cs231n/slides/caffe_tutorial.pdf 
+	d) http://on-demand.gputechconf.com/gtc/2015/webinar/deep-learning-course/getting-started-with-caffe.pdf
+
+*) Neural Network Online course 
+    a) https://www.youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH
+       http://info.usherbrooke.ca/hlarochelle/neural_networks/content.html (Materials for the videos)
+
+
