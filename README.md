@@ -47,7 +47,7 @@ Train and Validataion:
 
 Test:
 
-	1) Modify the python script testSample.py  and run it to see the result of a specific image. The variables to change are
-	caffe_root , model_def, model_weights,sampleImgPath 
+	1) Modify the python script testSample.py  and run the script to see the result of a specific image. The variables to change are
+	caffe_root , model_def, model_weights,sampleImgPath. 
 
 
