@@ -4,7 +4,7 @@ A full caffe experiment using MNIST dataset. It includes organizing the data int
 Prerequisites:
 
 	1) Install caffe, with python layers, and pycaffe.
-	2) Anaconda for python.
+	2) Anaconda for python (https://docs.continuum.io/anaconda/install ).
 
 
 
