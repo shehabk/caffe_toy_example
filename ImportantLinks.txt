@@ -1,5 +1,6 @@
 *) CNN overview:
 	a) http://cs231n.github.io/convolutional-networks/
+	b) https://www.toptal.com/machine-learning/an-introduction-to-deep-learning-from-perceptrons-to-deep-networks
 
 *) Protocol Buffers
 	a) https://developers.google.com/protocol-buffers/docs/proto#simple 
