@@ -14,7 +14,7 @@ Data Preparation:
 	2) Open terminal and then 'cd' to the the directory 'data'
 	3) From the directory data run the script get_mnist.sh
 	    sample command: 
-	    	shehab@CSE-TONG-R2:~home/DeepLearningGroup/CaffeToyExampleMnist/data$ ./get_mnist.sh
+	    	shehab@CSE-TONG-R2:~/DeepLearningGroup/CaffeToyExampleMnist/data$ ./get_mnist.sh
 
 	   This script will download mnist dataset in some compressed files.
 
@@ -24,12 +24,12 @@ Data Preparation:
 	   for training and validation of the network.
 
 	   sample command: 
-	    	shehab@CSE-TONG-R2:~home/DeepLearningGroup/CaffeToyExampleMnist/data$ python ImageListAndImage.py
+	    	shehab@CSE-TONG-R2:~/DeepLearningGroup/CaffeToyExampleMnist/data$ python ImageListAndImage.py
 
 	5) Open the script 'create_mnist_lmdb.sh' in a text editor and make necessary changes to CAFFE_ROOT , TRAIN_DATA_ROOT, VAL_DATA_ROOT. Run the script create_mnist_lmdb.sh, it will create lmdb databases using the train.txt and test.txt files. lmdb is another way to feed data to caffe. This script uses the utility provided by caffe to create lmdb dataset.
 
 		sample command: 
-	    	shehab@CSE-TONG-R2:~home/DeepLearningGroup/CaffeToyExampleMnist/data$ python ./create_mnsit_lmdb.sh
+	    	shehab@CSE-TONG-R2:~/DeepLearningGroup/CaffeToyExampleMnist/data$ python ./create_mnsit_lmdb.sh
 
 	6) Run the python script 'hdf5fromImgList.py', this will create hdf5 database from the Images, which is another way of to feed data to
 	   caffe.
@@ -40,7 +40,7 @@ Train and Validataion:
 	2) In terminal move back to the directory 'CaffeToyExampleMnist', using 'cd ..'
 	3) Now from here run any scripts to train the corresponding network.  
 	sample command: 
-	    	shehab@CSE-TONG-R2:~home/DeepLearningGroup/CaffeToyExampleMnist$ ./scripts/hdf5_train_lenet.sh
+	    	shehab@CSE-TONG-R2:~/DeepLearningGroup/CaffeToyExampleMnist$ ./scripts/hdf5_train_lenet.sh
 
 	It will use the hdf5_lenet_solver.prototxt hdf5_lenet_train_test.prototxt present in the 'CaffeToyExampleMnist/models' to run the 
 	training and validation. It uses the hdf5 database which was generated in the data generation step.
