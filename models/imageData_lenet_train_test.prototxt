@@ -11,9 +11,9 @@ layer {
     scale: 0.00390625
   }
 
-  image_data_param {
-    source: "/media/shehab/F_DRIVE/Research_Documents/DeepLearningGroup/ToyExampleMnist/data/train.txt"
-    root_folder: "/media/shehab/F_DRIVE/Research_Documents/DeepLearningGroup/ToyExampleMnist/data/"
+  image_data_param {    
+    root_folder: "/home/shehabk/codes/caffeToyExample/data/"
+    source: "/home/shehabk/codes/caffeToyExample/data/train.txt"
     batch_size: 64
   }
 }
@@ -29,9 +29,9 @@ layer {
   transform_param {
     scale: 0.00390625
   }
-  image_data_param {
-    source: "/media/shehab/F_DRIVE/Research_Documents/DeepLearningGroup/ToyExampleMnist/data/val.txt"
-    root_folder: "/media/shehab/F_DRIVE/Research_Documents/DeepLearningGroup/ToyExampleMnist/data/"
+  image_data_param {    
+    root_folder: "/home/shehabk/codes/caffeToyExample/data/"
+    source: "/home/shehabk/codes/caffeToyExample/data/val.txt"
     batch_size: 64
   }
 }

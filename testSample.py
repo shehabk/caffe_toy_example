@@ -16,7 +16,7 @@ plt.rcParams['image.cmap'] = 'gray'  # use grayscale output rather than a (poten
 # The caffe module needs to be on the Python path;
 #  we'll add it here explicitly.
 import sys
-caffe_root = '/media/shehab/D_DRIVE/Codes/CodeCollection/Caffe/caffe-master_18_APR_2016/'
+caffe_root = '/home/shehabk/codes/caffe/caffe-sc-histogram'
 sys.path.insert(0, caffe_root + 'python')
 import caffe
 # If you get "No module named _caffe", either you have not built pycaffe or you have the wrong path.
@@ -25,14 +25,14 @@ import caffe
 caffe.set_mode_cpu()
 
 model_def = 'models/deploy.prototxt'
-model_weights = 'models/snapshot/hdf5_lenet_iter_10000.caffemodel'
-sampleImgPath = 'data/sample/val14.png'
+model_weights = 'models/snapshot/imageData_lenet_iter_10000.caffemodel'
+sampleImgPath = 'data/sample/val111.png'
 
 net = caffe.Net(model_def,      # defines the structure of the model
                 model_weights,  # contains the trained weights
                 caffe.TEST)     # use test mode (e.g., don't perform dropout)
 
-sampleImg = cv2.imread(sampleImgPath)
+sampleImg = cv2.imread(sampleImgPath);
 plt.imshow(sampleImg)
 plt.show()
 
@@ -40,7 +40,7 @@ transformedImg = sampleImg.transpose(2,0,1) # to bring the channel as the first 
 transformedImg = transformedImg/256.0 ;
 
 
-net.blobs['data'].data[...] = transformedImg
+net.blobs['data'].data[...] = transformedImg ;
 
 ### perform classification
 output = net.forward()
